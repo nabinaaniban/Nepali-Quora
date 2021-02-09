@@ -21,9 +21,8 @@ from . import views
 app_name ="accounts"
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
     path('login/', auth_views.LoginView.as_view(template_name='accounts/login.html'), name='login'),
     path('logout/', auth_views.LogoutView.as_view(), name='logout'),
-    path('signup/', views.signup, name='signup'),
+    path('register/', views.register, name='register'),
 
 ]
