@@ -1,0 +1,28 @@
+
+.jumbotron{
+      background: url(lappy.jpg);
+      background-size: cover;
+      background-position: center;
+      }
+
+#thid{
+     font-size:16px;
+     font-weight:bold;
+     text-align: center;
+}
+
+a{
+font-family: Arial, Helvetica, sans-serif;
+}
+
+#tdid{
+font-size:14px;
+     font-weight:normal;
+}
+tr[data-href]{
+cursor:pointer;
+}
+
+
+
+

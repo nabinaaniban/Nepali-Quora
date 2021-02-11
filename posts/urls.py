@@ -17,13 +17,7 @@ from django.contrib import admin
 from django.urls import include, path
 from . import views
 
-
+app_name ='posts'
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('',views.Homepage.as_view(),name='home'),
-    path('accounts/', include('accounts.urls'), name='accounts'),
-    path('accounts/', include('django.contrib.auth.urls')),
-    path('posts/', include('posts.urls'), name='posts'),
-  #  path('test/',views.TestPage.as_view(),name='test'),
-   # path('thanks/',views.Thankspage.as_view(),name='thanks'),
+    path('list/',views.PostListView.as_view(template_name='post_list.html'),name='post_list'),
 ]

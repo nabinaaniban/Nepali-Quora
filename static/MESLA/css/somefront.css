@@ -1,0 +1,46 @@
+.jumbotron a{
+       border: none;
+        outline: none;
+        font-size:18px;
+        background: #228b22;
+        width: 200px;
+        height:40px;
+        color: #fff;
+        border-radius:20px;
+font-family: Arial, Helvetica, sans-serif;
+       }
+
+.jumbotron a:hover
+       {
+       color:#000;}
+
+.flex-container_2 {
+  display: flex;
+  flex-wrap: nowrap;
+  height: 150px;
+  width:460px;
+}
+.flex-container_2.question_box3{
+
+  background-color: #f1f1f1;
+  width: 850px;
+  margin: 5px;
+ padding:5px;
+  line-height: 75px;
+}
+
+   .flex-container_2 .question_box3 button{
+
+        font-size:18px;
+        background: #228b22;
+        width: 100px;
+        height:40px;
+        color: #fff;
+        border-radius:20px;
+
+        font-family: Arial, Helvetica, sans-serif;
+       }
+
+.flex-container_2 .question_box3 button:hover
+       {
+       color:#000;}
