@@ -3,9 +3,10 @@ body{
       padding: 0;
       width: 100%;
       height: 550px;
-      background: url(green.png);
       background-size: cover;
       background-position: center;
+      background: url(green.png);
+
       }
 
       .flex-container_2 .question_box3 button{

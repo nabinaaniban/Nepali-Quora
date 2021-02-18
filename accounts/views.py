@@ -15,7 +15,7 @@ def register(request):
             username = form.cleaned_data.get('username')
             password = form.cleaned_data.get('password1')
 
-            messages.success(request,f'Account created for {username}!')
+           # messages.success(request,f'Account created for {username}!')
            # user = authenticate(username=username, password=password)
             #login(request, user)
             return redirect('home')

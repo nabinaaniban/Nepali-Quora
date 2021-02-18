@@ -4,7 +4,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Log In</title>
+    <title>MESLA</title>
     <link rel="stylesheet" href="login_form.css">
     <link rel="stylesheet" href="table.css">
 
@@ -25,15 +25,16 @@ MESLA</a>
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <ul class="nav navbar-nav">
+
           {% if user.is_authenticated %}
           <li><a class="nav-link active" href="#">Post</a>
-          <li><a class="nav-link active" href="{% url 'accounts:logout' %}">Log Out<span class="sr-only">(current)</span></a></li>
+          <li><a class="nav-link active" href="{% url 'logout' %}">Log Out<span class="sr-only">(current)</span></a></li>
 
 
             {% else %}
           <li><a class="nav-link active" href="#">About Us</a>
-          <li><a class="nav-link active" href="{% url 'accounts:login' %}">Log In<span class="sr-only">(current)</span></a></li>
-          <li><a class="nav-link active" href="{% url 'accounts:register' %}">Register</a>
+          <li><a class="nav-link active" href="{% url 'login' %}">Log In<span class="sr-only">(current)</span></a></li>
+          <li><a class="nav-link active" href="{% url 'register' %}">Register</a>
 
 
             {% endif %}

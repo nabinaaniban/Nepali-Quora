@@ -24,17 +24,18 @@ MESLA</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+
+     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <ul class="nav navbar-nav">
           {% if user.is_authenticated %}
           <li><a class="nav-link active" href="#">Post</a>
-          <li><a class="nav-link active" href="{% url 'accounts:logout' %}">Log Out<span class="sr-only">(current)</span></a></li>
+          <li><a class="nav-link active" href="{% url 'logout' %}">Log Out<span class="sr-only">(current)</span></a></li>
 
 
             {% else %}
           <li><a class="nav-link active" href="#">About Us</a>
-          <li><a class="nav-link active" href="{% url 'accounts:login' %}">Log In<span class="sr-only">(current)</span></a></li>
-          <li><a class="nav-link active" href="{% url 'accounts:register' %}">Register</a>
+          <li><a class="nav-link active" href="{% url 'login' %}">Log In<span class="sr-only">(current)</span></a></li>
+          <li><a class="nav-link active" href="{% url 'register' %}">Register</a>
 
 
             {% endif %}
@@ -44,14 +45,7 @@ MESLA</a>
 
   </div>
 </nav>
-{% if messages %}
 
-{% for message in messages %}
-<div class="alert alert-{{ messsage.tags }}"></div>
-{{ message }}
-{% endfor %}
-
-{% endif %}
 <div class="container">
     {% block content %}{% endblock %}
 
@@ -68,7 +62,7 @@ MESLA</a>
 
   <p class="white-text" style="font-family: Arial, Helvetica, sans-serif;">Register to join the community.</p>
                 <!--<button type="submit" class="btn btn-success">Register Now!</button>-->
-        <a href="{% url 'accounts:register' %}"class="btn btn-success" role="button" aria-pressed="true" >Register Now!</a>
+        <a href="{% url 'register' %}"class="btn btn-success" role="button" aria-pressed="true" >Register Now!</a>
     </div>
 
         <h2>Have any questions?</h2>
